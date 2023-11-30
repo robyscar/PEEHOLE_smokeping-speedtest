@@ -1,0 +1,27 @@
+   config service 'myddns_ipv4-config'                                                                         
+          option service_name 'no-ip.com'      
+
+          option ip_source 'web'                         
+          option ip_url 'http://ifconfig.me/ip'
+          # external service retrieves public IP in plain text
+
+          option lookup_host 'r1cloud.ddns.net'
+                                                                               
+          option domain 'r1cloud.ddns.net'  
+          # e.g. myhome.ddns.net                   
+          
+          option username 'r1cloud'
+          option password '75$#QWer89%!ZXcv'                                                           
+          option interface ' wan'                                                                       
+          option ip_network 'wan'
+          option update_url 'update_no-ip_com.sh'
+
+### 
+### https://my.noip.com/account
+### r1cloud	/	75$#QWer89%!ZXcv
+### r1cloud.ddns.net
+### noip.r1cloud.ddns.net@robyscar.xyz
+### https://www.noip.com/support/knowledgebase/how-to-configure-ddns-in-router
+### 
+### 
+
